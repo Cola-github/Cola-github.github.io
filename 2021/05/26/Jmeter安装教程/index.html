@@ -642,10 +642,10 @@
 <p>如果出现以下信息则表示JDK安装成功<span class="github-emoji"><span>😁</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
 </li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2C4KPg"><img src="https://z3.ax1x.com/2021/05/27/2C4KPg.png" alt="2C4KPg.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2C4KPg"><img src="https://z3.ax1x.com/2021/05/27/2C4KPg.png" alt="jdk配置成功"></a></p>
 <ul>
 <li><p>2.开始配置Jmeter环境变量<br>1.点击我的电脑—-属性—-高级—-环境变量—-在系统变量中—-点击新建<br>2.变量名输入：JMETER_HOME<br>3.变量值为安装路径的根目录，例如我安装在D盘下，则目录为：D:\apache-jmeter-4.0,建议直接打开安装目录，拷贝路径，以免手打输入错误导致不必要的错误检查<br>4.点击系统变量中的CLASSPATH变量，在后面加上以下变量</p>
-<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar;%JMETER_HOME%\lib\jorphan.jar;%JMETER_HOME%\lib\logkit-<span class="number">2.0</span>.jar;</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar;%JMETER_HOME%\lib\jorphan.jar;%JMETER_HOME%\lib\logkit-<span class="number">2.0</span>.jar;</span><br></pre></td></tr></tbody></table></figure>
 
 <p>5.点击确认即可，此时Jmeter的环境变量已经配置完毕</p>
 </li>
@@ -659,10 +659,10 @@
 <blockquote>
 <p> 第四步：打开过程中Jmeter提示语句解析<span class="github-emoji"><span>⚠</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
 </blockquote>
-<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2C5PoT"><img src="https://z3.ax1x.com/2021/05/27/2C5PoT.png" alt="2C5PoT.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2C5PoT"><img src="https://z3.ax1x.com/2021/05/27/2C5PoT.png" alt="Jmeter启动图"></a></p>
 <ol>
-<li><p>```java<br>Don’t use GUI mode for load testing !, only for Test creation and Test debugging</p>
-<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">   不要使用GUI模型去进行负载测试，仅使用与测试的创建和debug调试</span><br><span class="line"></span><br><span class="line">2. ```java</span><br><span class="line">   jmeter -n -t [jmx file] -l [results file] -e -o [Path to web report folder]</span><br></pre></td></tr></tbody></table></figure>
+<li><p>```javascript<br>Don’t use GUI mode for load testing !, only for Test creation and Test debugging</p>
+<figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">   不要使用GUI模型去进行负载测试，仅使用与测试的创建和debug调试</span><br><span class="line"></span><br><span class="line">2. ```javascript</span><br><span class="line">   jmeter -n -t [jmx file] -l [results file] -e -o [Path to web report folder]</span><br></pre></td></tr></tbody></table></figure>
 
 <p>该语句为导出Jmeter测试报告，填写语句中对应的内容即可对测试报告进行导出操作</p>
 <p>例如：jmeter -n -t D:\测试计划.jmx -l result resultTest.jtl -e -o D:\result<br>[jmx file]为Jmeter创建的测试文件<br>[results file]为指定导出的目标文件名<br>[Path to web report folder]为目标文件的存放路径</p>
