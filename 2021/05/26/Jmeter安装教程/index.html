@@ -645,8 +645,7 @@
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2C4KPg"><img src="https://z3.ax1x.com/2021/05/27/2C4KPg.png" alt="jdk配置成功"></a></p>
 <ul>
 <li><p>2.开始配置Jmeter环境变量<br>1.点击我的电脑—-属性—-高级—-环境变量—-在系统变量中—-点击新建<br>2.变量名输入：JMETER_HOME<br>3.变量值为安装路径的根目录，例如我安装在D盘下，则目录为：D:\apache-jmeter-4.0,建议直接打开安装目录，拷贝路径，以免手打输入错误导致不必要的错误检查<br>4.点击系统变量中的CLASSPATH变量，在后面加上以下变量</p>
-<figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar;%JMETER_HOME%\lib\jorphan.jar;%JMETER_HOME%\lib\logkit-<span class="number">2.0</span>.jar;</span><br></pre></td></tr></tbody></table></figure>
-
+<p><code>%JMETER_HOME%\lib\ext\ApacheJMeter_core.jar;%JMETER_HOME%\lib\jorphan.jar;%JMETER_HOME%\lib\logkit-2.0.jar;</code></p>
 <p>5.点击确认即可，此时Jmeter的环境变量已经配置完毕</p>
 </li>
 </ul>
