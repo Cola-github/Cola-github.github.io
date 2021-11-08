@@ -54,11 +54,11 @@
     
     
     <entry>
-      <title>Jmeter基础知识—断言</title>
-      <link href="2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E6%96%AD%E8%A8%80/"/>
-      <url>2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E6%96%AD%E8%A8%80/</url>
+      <title>Jmeter基础知识—请求参数化</title>
+      <link href="2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0%E5%8C%96/"/>
+      <url>2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0%E5%8C%96/</url>
       
-        <content type="html"><![CDATA[<h1 id="Jmeter基础知识—查看结果"><a href="#Jmeter基础知识—查看结果" class="headerlink" title="Jmeter基础知识—查看结果"></a>Jmeter基础知识—查看结果</h1><p>断言种类繁多，如以下，本章主要讲解响应断言，Json断言，Xpath断言，其余自行了解<br><a href="https://imgtu.com/i/2BxucR"><img src="https://z3.ax1x.com/2021/06/08/2BxucR.png" alt="查看大图"></a></p><ul><li><h4 id="响应断言"><a href="#响应断言" class="headerlink" title="响应断言"></a><font color="red">响应断言</font></h4></li></ul><p>  <a href="https://imgtu.com/i/2BzfRH"><img src="https://z3.ax1x.com/2021/06/08/2BzfRH.png" alt="查看大图"></a></p><p>  添加完断言后，运行http请求，如果添加的断言在响应结果中，那么这个http请求则显示为绿色标记通过，如果响应结果中没有自行添加的断言，那么这个请求则不通过标红</p><ul><li><h4 id="Json断言"><a href="#Json断言" class="headerlink" title="Json断言"></a><font color="red">Json断言</font></h4><p>通过表达式获取json返回值中的数据，通过判断是否包含有指定的数据来进行结果判断处理，非常适合返回值为json类型的接口<br><a href="https://imgtu.com/i/2DFDhV"><img src="https://z3.ax1x.com/2021/06/08/2DFDhV.png" alt="查看大图"></a></p></li><li><h4 id="Xpath断言"><a href="#Xpath断言" class="headerlink" title="Xpath断言"></a><font color="red">Xpath断言</font></h4><p>通过控制台中复制Xpath进行筛选，查看结果<br><a href="https://imgtu.com/i/2Dkg8f"><img src="https://z3.ax1x.com/2021/06/08/2Dkg8f.png" alt="查看大图"></a></p></li><li><h4 id="Jmeter结合Fiddler查看结果"><a href="#Jmeter结合Fiddler查看结果" class="headerlink" title="Jmeter结合Fiddler查看结果"></a><font color="red">Jmeter结合Fiddler查看结果</font></h4><p>1.打开jmeter请求中的高级选项，输入项目地址，以及Fiddler的端口号，默认为8888</p><p><a href="https://imgtu.com/i/2DWVdx"><img src="https://z3.ax1x.com/2021/06/08/2DWVdx.png" alt="查看大图"></a></p><p>2.运行后，打开Fiddler即可抓到这条请求的包，里面有这条请求的所有详细数据<br><a href="https://imgtu.com/i/2DWj6H"><img src="https://z3.ax1x.com/2021/06/08/2DWj6H.png" alt="查看大图"></a></p><p>结合Fiddler抓包可以精准的获得这条数据的一切信息。</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="Jmeter基础知识—请求参数化"><a href="#Jmeter基础知识—请求参数化" class="headerlink" title="Jmeter基础知识—请求参数化"></a>Jmeter基础知识—请求参数化</h1><ol><li><p><strong>添加配置元件中的CSV数据文件设置，在文件中填入相关参数，如下：</strong><br><a href="https://imgtu.com/i/2yY5Ed"><img src="https://z3.ax1x.com/2021/06/09/2yY5Ed.png" alt="点击查看大图"></a></p></li><li><p><strong>添加http请求，在请求中把参数和配置文件关联起来</strong></p><p><a href="https://imgtu.com/i/2yt3rD"><img src="https://z3.ax1x.com/2021/06/09/2yt3rD.png" alt="点击查看大图"></a></p></li><li><p><strong>在线程组中设置循环次数，一般配置文件中有多少条数据，我们就设置为循环多少次</strong></p></li><li><p><strong>运行，查看结果树，如果参数比较多，可以勾选上“仅错误日志”</strong></p></li></ol>]]></content>
       
       
       <categories>
@@ -79,11 +79,11 @@
     
     
     <entry>
-      <title>Jmeter基础知识—请求参数化</title>
-      <link href="2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0%E5%8C%96/"/>
-      <url>2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0%E5%8C%96/</url>
+      <title>Jmeter基础知识—断言</title>
+      <link href="2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E6%96%AD%E8%A8%80/"/>
+      <url>2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E6%96%AD%E8%A8%80/</url>
       
-        <content type="html"><![CDATA[<h1 id="Jmeter基础知识—请求参数化"><a href="#Jmeter基础知识—请求参数化" class="headerlink" title="Jmeter基础知识—请求参数化"></a>Jmeter基础知识—请求参数化</h1><ol><li><p><strong>添加配置元件中的CSV数据文件设置，在文件中填入相关参数，如下：</strong><br><a href="https://imgtu.com/i/2yY5Ed"><img src="https://z3.ax1x.com/2021/06/09/2yY5Ed.png" alt="点击查看大图"></a></p></li><li><p><strong>添加http请求，在请求中把参数和配置文件关联起来</strong></p><p><a href="https://imgtu.com/i/2yt3rD"><img src="https://z3.ax1x.com/2021/06/09/2yt3rD.png" alt="点击查看大图"></a></p></li><li><p><strong>在线程组中设置循环次数，一般配置文件中有多少条数据，我们就设置为循环多少次</strong></p></li><li><p><strong>运行，查看结果树，如果参数比较多，可以勾选上“仅错误日志”</strong></p></li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="Jmeter基础知识—查看结果"><a href="#Jmeter基础知识—查看结果" class="headerlink" title="Jmeter基础知识—查看结果"></a>Jmeter基础知识—查看结果</h1><p>断言种类繁多，如以下，本章主要讲解响应断言，Json断言，Xpath断言，其余自行了解<br><a href="https://imgtu.com/i/2BxucR"><img src="https://z3.ax1x.com/2021/06/08/2BxucR.png" alt="查看大图"></a></p><ul><li><h4 id="响应断言"><a href="#响应断言" class="headerlink" title="响应断言"></a><font color="red">响应断言</font></h4></li></ul><p>  <a href="https://imgtu.com/i/2BzfRH"><img src="https://z3.ax1x.com/2021/06/08/2BzfRH.png" alt="查看大图"></a></p><p>  添加完断言后，运行http请求，如果添加的断言在响应结果中，那么这个http请求则显示为绿色标记通过，如果响应结果中没有自行添加的断言，那么这个请求则不通过标红</p><ul><li><h4 id="Json断言"><a href="#Json断言" class="headerlink" title="Json断言"></a><font color="red">Json断言</font></h4><p>通过表达式获取json返回值中的数据，通过判断是否包含有指定的数据来进行结果判断处理，非常适合返回值为json类型的接口<br><a href="https://imgtu.com/i/2DFDhV"><img src="https://z3.ax1x.com/2021/06/08/2DFDhV.png" alt="查看大图"></a></p></li><li><h4 id="Xpath断言"><a href="#Xpath断言" class="headerlink" title="Xpath断言"></a><font color="red">Xpath断言</font></h4><p>通过控制台中复制Xpath进行筛选，查看结果<br><a href="https://imgtu.com/i/2Dkg8f"><img src="https://z3.ax1x.com/2021/06/08/2Dkg8f.png" alt="查看大图"></a></p></li><li><h4 id="Jmeter结合Fiddler查看结果"><a href="#Jmeter结合Fiddler查看结果" class="headerlink" title="Jmeter结合Fiddler查看结果"></a><font color="red">Jmeter结合Fiddler查看结果</font></h4><p>1.打开jmeter请求中的高级选项，输入项目地址，以及Fiddler的端口号，默认为8888</p><p><a href="https://imgtu.com/i/2DWVdx"><img src="https://z3.ax1x.com/2021/06/08/2DWVdx.png" alt="查看大图"></a></p><p>2.运行后，打开Fiddler即可抓到这条请求的包，里面有这条请求的所有详细数据<br><a href="https://imgtu.com/i/2DWj6H"><img src="https://z3.ax1x.com/2021/06/08/2DWj6H.png" alt="查看大图"></a></p><p>结合Fiddler抓包可以精准的获得这条数据的一切信息。</p></li></ul>]]></content>
       
       
       <categories>
