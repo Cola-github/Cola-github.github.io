@@ -531,15 +531,19 @@
             <div id="articleContent">
                 <h1 id="Jmeter基础知识—查看结果"><a href="#Jmeter基础知识—查看结果" class="headerlink" title="Jmeter基础知识—查看结果"></a>Jmeter基础知识—查看结果</h1><p>断言种类繁多，如以下，本章主要讲解响应断言，Json断言，Xpath断言，其余自行了解<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2BxucR"><img src="https://z3.ax1x.com/2021/06/08/2BxucR.png" alt="查看大图"></a></p>
 <ul>
-<li><font color="red">响应断言</font></li>
+<li><h4 id="响应断言"><a href="#响应断言" class="headerlink" title="响应断言"></a><font color="red">响应断言</font></h4></li>
 </ul>
 <p>  <a target="_blank" rel="noopener" href="https://imgtu.com/i/2BzfRH"><img src="https://z3.ax1x.com/2021/06/08/2BzfRH.png" alt="查看大图"></a></p>
 <p>  添加完断言后，运行http请求，如果添加的断言在响应结果中，那么这个http请求则显示为绿色标记通过，如果响应结果中没有自行添加的断言，那么这个请求则不通过标红</p>
 <ul>
-<li><p><font color="red">Json断言</font></p>
-<p>通过表达式获取json返回值中的数据，通过判断是否包含有指定的数据来进行结果判断处理，非常适合返回值为json类型的接口<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2DFDhV"><img src="https://z3.ax1x.com/2021/06/08/2DFDhV.png" alt="查看大图"></a></p>
+<li><h4 id="Json断言"><a href="#Json断言" class="headerlink" title="Json断言"></a><font color="red">Json断言</font></h4><p>通过表达式获取json返回值中的数据，通过判断是否包含有指定的数据来进行结果判断处理，非常适合返回值为json类型的接口<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2DFDhV"><img src="https://z3.ax1x.com/2021/06/08/2DFDhV.png" alt="查看大图"></a></p>
 </li>
-<li><p><font color="red">Xpath断言</font><br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2Dkg8f"><img src="https://z3.ax1x.com/2021/06/08/2Dkg8f.png" alt="查看大图"></a></p>
+<li><h4 id="Xpath断言"><a href="#Xpath断言" class="headerlink" title="Xpath断言"></a><font color="red">Xpath断言</font></h4><p>通过控制台中复制Xpath进行筛选，查看结果<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2Dkg8f"><img src="https://z3.ax1x.com/2021/06/08/2Dkg8f.png" alt="查看大图"></a></p>
+</li>
+<li><h4 id="Jmeter结合Fiddler查看结果"><a href="#Jmeter结合Fiddler查看结果" class="headerlink" title="Jmeter结合Fiddler查看结果"></a><font color="red">Jmeter结合Fiddler查看结果</font></h4><p>1.打开jmeter请求中的高级选项，输入项目地址，以及Fiddler的端口号，默认为8888</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2DWVdx"><img src="https://z3.ax1x.com/2021/06/08/2DWVdx.png" alt="查看大图"></a></p>
+<p>2.运行后，打开Fiddler即可抓到这条请求的包，里面有这条请求的所有详细数据<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2DWj6H"><img src="https://z3.ax1x.com/2021/06/08/2DWj6H.png" alt="查看大图"></a></p>
+<p>结合Fiddler抓包可以精准的获得这条数据的一切信息。</p>
 </li>
 </ul>
 
@@ -1125,13 +1129,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/05/26/Jmeter%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+                <a href="/2021/05/31/Jmeter%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E2%80%94%E8%AF%B7%E6%B1%82%E5%8F%82%E6%95%B0%E5%8C%96/">
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/cola-github/cola-github.github.io/medias/featureimages/19.jpg" class="responsive-img" alt="Jmeter安装教程">
+                        <img src="https://cdn.jsdelivr.net/gh/cola-github/cola-github.github.io/medias/featureimages/9.jpg" class="responsive-img" alt="Jmeter基础知识—请求参数化">
                         
-                        <span class="card-title">Jmeter安装教程</span>
+                        <span class="card-title">Jmeter基础知识—请求参数化</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1142,14 +1146,14 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-31
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Jmeter/" class="post-category">
-                                    Jmeter
+                            <a href="/categories/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/" class="post-category">
+                                    接口测试
                                 </a>
                             
                             
@@ -1159,8 +1163,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Jmeter/">
-                        <span class="chip bg-color">Jmeter</span>
+                    <a href="/tags/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/">
+                        <span class="chip bg-color">接口测试</span>
                     </a>
                     
                 </div>
