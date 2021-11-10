@@ -244,6 +244,11 @@ mark {
     background-image: linear-gradient(to right, #4cbf30 0%, #3f1b07 100%);
 }
 
+@media only screen and (min-width: 993px)
+.bg-color {
+    background-color: rgba(252, 250, 250, 0.75);
+}
+
 .text-color {
     color: #0f9d58 !important;
 }
@@ -1120,17 +1125,6 @@ article .article-tags .chip {
 @media only screen and (min-width: 993px)
 .h-color {
     background-color: rgba(252, 250, 250, 0.75);
-}
-
-nav {
-    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 7px 10px 0 rgb(0 0 0 / 12%);
-}
-nav {
-    color: #fff;
-    background-color: #ee6e73;
-    width: 100%;
-    height: 56px;
-    line-height: 56px;
 }
 
 @media only screen and (max-width: 601px) {
