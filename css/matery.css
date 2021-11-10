@@ -1117,6 +1117,15 @@ article .article-tags .chip {
     padding: 0 15px 20px 18px;
 }
 
+@media only screen and (min-width: 993px)
+.h-color {
+    background-color: rgba(252, 250, 250, 0.75);
+}
+
+nav {
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 7px 10px 0 rgb(0 0 0 / 12%);
+}
+
 @media only screen and (max-width: 601px) {
     #artDetail .article-info {
         padding: 15px 15px 1px 15px;
