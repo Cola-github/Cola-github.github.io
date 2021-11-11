@@ -29,9 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -546,10 +544,25 @@
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    498
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    2 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -570,13 +583,13 @@
 <p><strong>第二步：Jmeter环境配置</strong></p>
 </blockquote>
 <ul>
-<li><p>1.首先保证电脑已经配置好了JDK，查询是否安装好JDK步骤<span class="github-emoji"><span>⭐</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<li><p>1.首先保证电脑已经配置好了JDK，查询是否安装好JDK步骤:star:</p>
 <ol>
 <li>win+r</li>
 <li>输入cmd</li>
 <li>输入java -version</li>
 </ol>
-<p>如果出现以下信息则表示JDK安装成功<span class="github-emoji"><span>😁</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f601.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<p>如果出现以下信息则表示JDK安装成功:grin:</p>
 </li>
 </ul>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2C4KPg"><img src="https://z3.ax1x.com/2021/05/27/2C4KPg.png" alt="jdk配置成功"></a></p>
@@ -587,13 +600,13 @@
 </li>
 </ul>
 <blockquote>
-<p><strong>第三步：打开Jmeter的两种方式</strong><span class="github-emoji"><span>😎</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<p><strong>第三步：打开Jmeter的两种方式</strong>:sunglasses:</p>
 </blockquote>
 <p>​        1.打开Jmeter安装目录，找到bin目录下的jmeter.bat双击运行</p>
 <p>​        2.win+r,输入cmd,输入jmeter打开</p>
 <p>​        3.两种方式均可打开Jmeter图形化工具，命令行窗口不可关闭，否则jmeter也会被关闭</p>
 <blockquote>
-<p> 第四步：打开过程中Jmeter提示语句解析<span class="github-emoji"><span>⚠</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<p> 第四步：打开过程中Jmeter提示语句解析:warning:</p>
 </blockquote>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2C5PoT"><img src="https://z3.ax1x.com/2021/05/27/2C5PoT.png" alt="Jmeter启动图"></a></p>
 <ul>
@@ -614,7 +627,7 @@
 </li>
 </ul>
 <hr>
-<p><span class="github-emoji"><span>✌</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/270c.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>安装完成，请开始你的Jmeter之旅吧！</p>
+<p>:v:安装完成，请开始你的Jmeter之旅吧！</p>
 
                 
             </div>
@@ -1357,6 +1370,60 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5420138642"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
 
     <div class="container row center-align"
          style="margin-bottom: 15px !important;">
@@ -1370,6 +1437,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">可乐</a>
             
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">1.9k</span>
             
             
             
@@ -1637,6 +1707,11 @@ $(function () {
     <!--腾讯兔小巢-->
     
     
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
 
     
 
@@ -1653,5 +1728,5 @@ $(function () {
         document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
     })
 </script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</body>
 </html>

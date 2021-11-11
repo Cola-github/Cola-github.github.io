@@ -29,9 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -546,10 +544,25 @@
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    426
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -560,12 +573,12 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Jmeter基础"><a href="#Jmeter基础" class="headerlink" title="Jmeter基础"></a>Jmeter基础</h1><h4 id="Get、Post请求（以个人学生管理系统为例）-smile"><a href="#Get、Post请求（以个人学生管理系统为例）-smile" class="headerlink" title="Get、Post请求（以个人学生管理系统为例）:smile:"></a>Get、Post请求（以个人学生管理系统为例）<span class="github-emoji"><span>😄</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></h4><ul>
-<li><h5 id="用户自定义的变量-triangular-flag-on-post"><a href="#用户自定义的变量-triangular-flag-on-post" class="headerlink" title="用户自定义的变量:triangular_flag_on_post:"></a>用户自定义的变量<span class="github-emoji"><span>🚩</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a9.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></h5><p>在线程组中右键新建“用户定义的变量”，添加键值对，如果在请求中需要使用到该变量，则在“值”这一栏下，填写${该变量名称}，来引用该变量的值<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2ZRhGV"><img src="https://z3.ax1x.com/2021/05/31/2ZRhGV.png" alt="点击查看大图"></a></p>
+                <h1 id="Jmeter基础"><a href="#Jmeter基础" class="headerlink" title="Jmeter基础"></a>Jmeter基础</h1><h4 id="Get、Post请求（以个人学生管理系统为例）-smile"><a href="#Get、Post请求（以个人学生管理系统为例）-smile" class="headerlink" title="Get、Post请求（以个人学生管理系统为例）:smile:"></a>Get、Post请求（以个人学生管理系统为例）:smile:</h4><ul>
+<li><h5 id="用户自定义的变量-triangular-flag-on-post"><a href="#用户自定义的变量-triangular-flag-on-post" class="headerlink" title="用户自定义的变量:triangular_flag_on_post:"></a>用户自定义的变量:triangular_flag_on_post:</h5><p>在线程组中右键新建“用户定义的变量”，添加键值对，如果在请求中需要使用到该变量，则在“值”这一栏下，填写${该变量名称}，来引用该变量的值<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2ZRhGV"><img src="https://z3.ax1x.com/2021/05/31/2ZRhGV.png" alt="点击查看大图"></a></p>
 </li>
-<li><h5 id="HTTP默认请求值-triangular-flag-on-post"><a href="#HTTP默认请求值-triangular-flag-on-post" class="headerlink" title="HTTP默认请求值:triangular_flag_on_post:"></a>HTTP默认请求值<span class="github-emoji"><span>🚩</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a9.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></h5><p>在一个线程组中添加HTTP请求默认值，使此线程组里面的每一个请求都默认使用这个请求值，不需要再次填写请求基本信息<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2ZRTr4"><img src="https://z3.ax1x.com/2021/05/31/2ZRTr4.png" alt="点击查看大图"></a></p>
+<li><h5 id="HTTP默认请求值-triangular-flag-on-post"><a href="#HTTP默认请求值-triangular-flag-on-post" class="headerlink" title="HTTP默认请求值:triangular_flag_on_post:"></a>HTTP默认请求值:triangular_flag_on_post:</h5><p>在一个线程组中添加HTTP请求默认值，使此线程组里面的每一个请求都默认使用这个请求值，不需要再次填写请求基本信息<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2ZRTr4"><img src="https://z3.ax1x.com/2021/05/31/2ZRTr4.png" alt="点击查看大图"></a></p>
 </li>
-<li><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><p>（一）以下为请求路径，以及请求参数示例：<span class="github-emoji"><span>🚩</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a9.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<li><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><p>（一）以下为请求路径，以及请求参数示例：:triangular_flag_on_post:</p>
 <table>
 <thead>
 <tr>
@@ -586,18 +599,18 @@
 <td>123</td>
 </tr>
 </tbody></table>
-<p>（二）在Jmeter中，新建线程组，在线程组中新建HTTP请求，以下为填写要求<span class="github-emoji"><span>🚩</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a9.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<p>（二）在Jmeter中，新建线程组，在线程组中新建HTTP请求，以下为填写要求:triangular_flag_on_post:</p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2FRjTf"><img src="https://z3.ax1x.com/2021/05/28/2FRjTf.png" alt="点击查看大图"></a></p>
-<p>（三）演示Get请求<span class="github-emoji"><span>🚩</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a9.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<p>（三）演示Get请求:triangular_flag_on_post:</p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2Z2UpT"><img src="https://z3.ax1x.com/2021/05/31/2Z2UpT.png" alt="点击查看大图"></a></p>
 <p> <a target="_blank" rel="noopener" href="https://imgtu.com/i/2Z2WcD"><img src="https://z3.ax1x.com/2021/05/31/2Z2WcD.png" alt="点击查看大图"></a></p>
-<p>（四）演示Post请求<span class="github-emoji"><span>🚩</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a9.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span><br>这里引用HTTP请求默认值，以及用户自定义变量，则不再描述<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2ZWnsg"><img src="https://z3.ax1x.com/2021/05/31/2ZWnsg.png" alt="点击查看大图"></a></p>
+<p>（四）演示Post请求:triangular_flag_on_post:<br>这里引用HTTP请求默认值，以及用户自定义变量，则不再描述<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2ZWnsg"><img src="https://z3.ax1x.com/2021/05/31/2ZWnsg.png" alt="点击查看大图"></a></p>
 <ul>
-<li><p>至此Jmeter的GET、POST请求已经完成了，这里需要提醒以下，GET请求和POST请求的差别：<br>GET请求会把用户输入的参数显示在地址栏中，则存在安全隐患<span class="github-emoji"><span>😂</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<li><p>至此Jmeter的GET、POST请求已经完成了，这里需要提醒以下，GET请求和POST请求的差别：<br>GET请求会把用户输入的参数显示在地址栏中，则存在安全隐患:joy:</p>
 </li>
-<li><p>另外请求显示成功并且状态码为200时，不代表这个接口是测试通过并且返回数据的，仅仅代表这个接口能够接收到请求，测试是否返回数据需要查看“响应数据”一栏的数值与预期是否一致。<span class="github-emoji"><span>⚠</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<li><p>另外请求显示成功并且状态码为200时，不代表这个接口是测试通过并且返回数据的，仅仅代表这个接口能够接收到请求，测试是否返回数据需要查看“响应数据”一栏的数值与预期是否一致。:warning:</p>
 </li>
-<li><p>在输入所有请求路径、请求值等时，不要输入空格，否则运行时就弹出URL语法错误<span class="github-emoji"><span>⚠</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span></p>
+<li><p>在输入所有请求路径、请求值等时，不要输入空格，否则运行时就弹出URL语法错误:warning:</p>
 </li>
 </ul>
 </li>
@@ -1357,6 +1370,60 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5420138642"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
 
     <div class="container row center-align"
          style="margin-bottom: 15px !important;">
@@ -1370,6 +1437,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">可乐</a>
             
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">1.9k</span>
             
             
             
@@ -1637,6 +1707,11 @@ $(function () {
     <!--腾讯兔小巢-->
     
     
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
 
     
 
@@ -1653,5 +1728,5 @@ $(function () {
         document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
     })
 </script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</body>
 </html>

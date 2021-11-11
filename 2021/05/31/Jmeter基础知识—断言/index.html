@@ -29,9 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -452,10 +450,25 @@
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    273
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -468,16 +481,16 @@
             <div id="articleContent">
                 <h1 id="Jmeter基础知识—查看结果"><a href="#Jmeter基础知识—查看结果" class="headerlink" title="Jmeter基础知识—查看结果"></a>Jmeter基础知识—查看结果</h1><p>断言种类繁多，如以下，本章主要讲解响应断言，Json断言，Xpath断言，其余自行了解<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2BxucR"><img src="https://z3.ax1x.com/2021/06/08/2BxucR.png" alt="查看大图"></a></p>
 <ul>
-<li><h4 id="响应断言"><a href="#响应断言" class="headerlink" title="响应断言"></a><font color="red">响应断言</font></h4></li>
+<li><h4 id="响应断言"><a href="#响应断言" class="headerlink" title="响应断言"></a><font color='red'>响应断言</font></h4></li>
 </ul>
 <p>  <a target="_blank" rel="noopener" href="https://imgtu.com/i/2BzfRH"><img src="https://z3.ax1x.com/2021/06/08/2BzfRH.png" alt="查看大图"></a></p>
 <p>  添加完断言后，运行http请求，如果添加的断言在响应结果中，那么这个http请求则显示为绿色标记通过，如果响应结果中没有自行添加的断言，那么这个请求则不通过标红</p>
 <ul>
-<li><h4 id="Json断言"><a href="#Json断言" class="headerlink" title="Json断言"></a><font color="red">Json断言</font></h4><p>通过表达式获取json返回值中的数据，通过判断是否包含有指定的数据来进行结果判断处理，非常适合返回值为json类型的接口<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2DFDhV"><img src="https://z3.ax1x.com/2021/06/08/2DFDhV.png" alt="查看大图"></a></p>
+<li><h4 id="Json断言"><a href="#Json断言" class="headerlink" title="Json断言"></a><font color='red'>Json断言</font></h4><p>通过表达式获取json返回值中的数据，通过判断是否包含有指定的数据来进行结果判断处理，非常适合返回值为json类型的接口<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2DFDhV"><img src="https://z3.ax1x.com/2021/06/08/2DFDhV.png" alt="查看大图"></a></p>
 </li>
-<li><h4 id="Xpath断言"><a href="#Xpath断言" class="headerlink" title="Xpath断言"></a><font color="red">Xpath断言</font></h4><p>通过控制台中复制Xpath进行筛选，查看结果<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2Dkg8f"><img src="https://z3.ax1x.com/2021/06/08/2Dkg8f.png" alt="查看大图"></a></p>
+<li><h4 id="Xpath断言"><a href="#Xpath断言" class="headerlink" title="Xpath断言"></a><font color='red'>Xpath断言</font></h4><p>通过控制台中复制Xpath进行筛选，查看结果<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2Dkg8f"><img src="https://z3.ax1x.com/2021/06/08/2Dkg8f.png" alt="查看大图"></a></p>
 </li>
-<li><h4 id="Jmeter结合Fiddler查看结果"><a href="#Jmeter结合Fiddler查看结果" class="headerlink" title="Jmeter结合Fiddler查看结果"></a><font color="red">Jmeter结合Fiddler查看结果</font></h4><p>1.打开jmeter请求中的高级选项，输入项目地址，以及Fiddler的端口号，默认为8888</p>
+<li><h4 id="Jmeter结合Fiddler查看结果"><a href="#Jmeter结合Fiddler查看结果" class="headerlink" title="Jmeter结合Fiddler查看结果"></a><font color='red'>Jmeter结合Fiddler查看结果</font></h4><p>1.打开jmeter请求中的高级选项，输入项目地址，以及Fiddler的端口号，默认为8888</p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2DWVdx"><img src="https://z3.ax1x.com/2021/06/08/2DWVdx.png" alt="查看大图"></a></p>
 <p>2.运行后，打开Fiddler即可抓到这条请求的包，里面有这条请求的所有详细数据<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/2DWj6H"><img src="https://z3.ax1x.com/2021/06/08/2DWj6H.png" alt="查看大图"></a></p>
 <p>结合Fiddler抓包可以精准的获得这条数据的一切信息。</p>
@@ -1143,6 +1156,60 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5420138642"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
 
     <div class="container row center-align"
          style="margin-bottom: 15px !important;">
@@ -1156,6 +1223,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">可乐</a>
             
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">1.9k</span>
             
             
             
@@ -1423,6 +1493,11 @@ $(function () {
     <!--腾讯兔小巢-->
     
     
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
 
     
 
@@ -1439,5 +1514,5 @@ $(function () {
         document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
     })
 </script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</body>
 </html>

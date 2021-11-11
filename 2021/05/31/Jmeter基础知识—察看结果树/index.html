@@ -29,9 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
-<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+<meta name="generator" content="Hexo 5.4.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -452,10 +450,25 @@
                 
 
                 
-
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    414
+                </div>
                 
 
                 
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    1 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -468,9 +481,9 @@
             <div id="articleContent">
                 <h1 id="Jmeter基础知识—察看结果树"><a href="#Jmeter基础知识—察看结果树" class="headerlink" title="Jmeter基础知识—察看结果树"></a>Jmeter基础知识—察看结果树</h1><ul>
 <li><h4 id="察看结果树之CSS-jQuery-Tester（CSS选择器测试）使用"><a href="#察看结果树之CSS-jQuery-Tester（CSS选择器测试）使用" class="headerlink" title="察看结果树之CSS_jQuery_Tester（CSS选择器测试）使用"></a>察看结果树之CSS_jQuery_Tester（CSS选择器测试）使用</h4>在察看结果树中，选中CSS选择器测试<ul>
-<li>选择器和属性：这里填写你需要过滤的CSS样式组件以及样式参数，例如<a class="text" name="hello"><br>当需要拿到name属性的值时，我们只需要在选择器输入“a[class=text]”，在属性中输入”name”<br>即可拿到name属性的值，这里的结果为hello，这个选择器的使用适合熟悉前端的测试人员，可以拿到筛选后组件中需要所有的属性的值</a></li><a class="text" name="hello">
-</a></ul><a class="text" name="hello">
-</a><a target="_blank" rel="noopener" href="https://imgtu.com/i/2er9vd"><img src="https://z3.ax1x.com/2021/05/31/2er9vd.png" alt="点击查看图片"></a></li>
+<li>选择器和属性：这里填写你需要过滤的CSS样式组件以及样式参数，例如<a class="text" name="hello"><br>当需要拿到name属性的值时，我们只需要在选择器输入“a[class=text]”，在属性中输入”name”<br>即可拿到name属性的值，这里的结果为hello，这个选择器的使用适合熟悉前端的测试人员，可以拿到筛选后组件中需要所有的属性的值</li>
+</ul>
+<a target="_blank" rel="noopener" href="https://imgtu.com/i/2er9vd"><img src="https://z3.ax1x.com/2021/05/31/2er9vd.png" alt="点击查看图片"></a></li>
 <li><h4 id="察看结果树之HTML和HTML-Source-Formatted"><a href="#察看结果树之HTML和HTML-Source-Formatted" class="headerlink" title="察看结果树之HTML和HTML  Source Formatted"></a>察看结果树之HTML和HTML  Source Formatted</h4>（一）HTML：Jmeter加载网页的样式，展现出网页的效果</li>
 </ul>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/2esBlQ"><img src="https://z3.ax1x.com/2021/05/31/2esBlQ.png" alt="点击查看图片"></a></p>
@@ -1145,6 +1158,60 @@
 
     <footer class="page-footer bg-color">
     
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="5420138642"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
 
     <div class="container row center-align"
          style="margin-bottom: 15px !important;">
@@ -1158,6 +1225,9 @@
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">可乐</a>
             
             <br>
+            
+                &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                        class="white-color">1.9k</span>
             
             
             
@@ -1425,6 +1495,11 @@ $(function () {
     <!--腾讯兔小巢-->
     
     
+    <script type="text/javascript" color="0,0,255"
+        pointColor="0,0,255" opacity='0.7'
+        zIndex="-1" count="99"
+        src="/libs/background/canvas-nest.js"></script>
+    
 
     
 
@@ -1441,5 +1516,5 @@ $(function () {
         document.hidden?(document.title="ヽ(●-`Д´-)ノ你要玩捉迷藏嘛",clearTimeout(st)):(document.title="(Ő∀Ő3)ノ好哦！",st=setTimeout(function(){document.title=OriginTitile},3e3))
     })
 </script>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":200,"height":400},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+</body>
 </html>
